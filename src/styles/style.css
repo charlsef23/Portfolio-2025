@@ -1,38 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    margin-right: 20px;
-  }
-  
-  .hero {
-    background: #f0f0f0;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 36px;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  .project-list {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .project {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
-  }
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+}

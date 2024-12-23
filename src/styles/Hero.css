@@ -1,0 +1,9 @@
+.hero {
+    background: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+  
+.hero h1 {
+    font-size: 36px;
+}
