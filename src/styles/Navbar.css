@@ -1,3 +1,7 @@
+/* src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .navbar ul {
     display: flex;
     list-style-type: none;
