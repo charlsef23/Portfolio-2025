@@ -11,6 +11,10 @@ const Projects = () => {
             <h3>Project 2</h3>
             <p>Description of the project.</p>
           </div>
+          <div className="project">
+            <h3>Project 3</h3>
+            <p>Description of the project.</p>
+          </div>
         </div>
       </section>
     )

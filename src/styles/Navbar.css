@@ -1,13 +1,138 @@
-/* src/styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    margin-right: 20px;
-  }
+/* General Navbar Styles */
+.navbar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0; /* Cambiado de `start` */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar.dark {
+  background-color: #1f2937; /* Dark mode */
+  border-bottom-color: #4b5563;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-image {
+  height: 2rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: black;
+}
+
+.navbar.dark .logo-text {
+  color: white;
+}
+
+/* Buttons */
+.navbar-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-toggle:hover {
+  background-color: #f3f4f6;
+}
+
+.menu-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: gray;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu.open {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.menu-item {
+  color: #1f2937;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  background-color: #e5e7eb;
+  color: #1d4ed8;
+}
+
+.menu-item.active {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.navbar.dark .menu-item {
+  color: white;
+}
+
+.navbar.dark .menu-item:hover {
+  background-color: #4b5563;
+}
