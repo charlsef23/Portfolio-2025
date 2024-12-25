@@ -1,13 +1,16 @@
-import Hero from '../components/Hero'
+import React from 'react';
+import './Home.css'; // Archivo CSS específico para la página (opcional)
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div>
-      <Hero />
-      <h2>Welcome to my portfolio!</h2>
-      <p>Here you will find information about my work as a web developer.</p>
+    <div className="home">
+      <header className="home-header">
+        <h1>Welcome to My Website</h1>
+        <p>This is the home page of your amazing React application!</p>
+        <button className="home-button">Get Started</button>
+      </header>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
