@@ -1,18 +1,13 @@
-const Contact = () => {
-    return (
-      <section>
-        <h2>Contact Me</h2>
-        <form>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" />
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" />
-          <label htmlFor="message">Message:</label>
-          <textarea id="message"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    )
-  }
-  
-  export default Contact
+// src/components/Contact.tsx
+import React from 'react';
+
+const Contact: React.FC = () => {
+  return (
+    <div className="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me at: example@example.com</p>
+    </div>
+  );
+};
+
+export default Contact;

@@ -1,10 +1,13 @@
-const About = () => {
-    return (
-      <section>
-        <h2>About Me</h2>
-        <p>I am a passionate web developer with experience in React, TypeScript, and more.</p>
-      </section>
-    )
-  }
-  
-  export default About
+// src/components/About.tsx
+import React from 'react';
+
+const About: React.FC = () => {
+  return (
+    <div className="about">
+      <h2>About Me</h2>
+      <p>I'm a web developer passionate about creating amazing applications.</p>
+    </div>
+  );
+};
+
+export default About;

@@ -1,23 +1,14 @@
-const Projects = () => {
-    return (
-      <section>
-        <h2>Projects</h2>
-        <div className="project-list">
-          <div className="project">
-            <h3>Project 1</h3>
-            <p>Description of the project.</p>
-          </div>
-          <div className="project">
-            <h3>Project 2</h3>
-            <p>Description of the project.</p>
-          </div>
-          <div className="project">
-            <h3>Project 3</h3>
-            <p>Description of the project.</p>
-          </div>
-        </div>
-      </section>
-    )
-  }
-  
-  export default Projects
+// src/components/Projects.tsx
+import React from 'react';
+
+const Projects: React.FC = () => {
+  return (
+    <div className="projects">
+      <h2>My Projects</h2>
+      <p>Here are some of the projects I've worked on:</p>
+      {/* Lista de proyectos */}
+    </div>
+  );
+};
+
+export default Projects;
