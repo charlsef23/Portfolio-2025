@@ -1,12 +1,12 @@
-const Hero = () => {
-    return (
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Hi, I'm [Your Name]</h1>
-          <p>Web Developer | Passionate about creating awesome websites</p>
-        </div>
-      </section>
-    )
-  }
-  
-  export default Hero
+import React from 'react';
+
+const Hero: React.FC = () => {
+  return (
+    <section>
+      <h1>Bienvenido a la página principal</h1>
+      <p>Este es el contenido principal de la página de inicio.</p>
+    </section>
+  );
+};
+
+export default Hero;

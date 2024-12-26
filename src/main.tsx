@@ -1,17 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './styles/style.css'
-import './styles/Navbar.css'
-import './styles/Hero.css'
-import './styles/About.css'
-import './styles/Projects.css'
-import { BrowserRouter } from 'react-router-dom'
-import App from './App'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+// Importa los archivos CSS que definen los estilos globales y específicos
+import "./styles/globals.css"; // Archivo global con estilos base de TailwindCSS
+import "./styles/index.css";   // Archivo opcional para estilos específicos si lo necesitas
+
+// Importa el componente principal de la aplicación
+import App from "./App";
+
+// Renderiza el componente principal 'App' dentro del contenedor con id 'root'
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-)
+    <App />
+  </React.StrictMode>
+);
