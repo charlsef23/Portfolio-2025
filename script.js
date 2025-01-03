@@ -1,4 +1,10 @@
+import { SpeedInsights } from "@vercel/speed-insights";
+
+// Usa SpeedInsights aquí según sea necesario
+console.log(SpeedInsights);
 'use strict';
+
+
 
 //Opening or closing side bar
 
