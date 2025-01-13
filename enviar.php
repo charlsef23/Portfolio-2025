@@ -4,10 +4,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = "charlsef23@icloud.com";
+    $to = "charlsef66@gmail.com";
     $subject = "Nuevo mensaje del formulario de contacto";
     $body = "Nombre: $fullname\nEmail: $email\nMensaje: $message";
-    $headers = "From: charlsef23@icloud.com";
+    $headers = "From: charlsef66@gmail.com";
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Gracias por tu mensaje, te responderemos pronto.";
